@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #myDiv {
+      background-color: lightgrey;
+      border: 1px solid grey;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      // Slide Down
+      $("#slideDownBtn").click(function() {
+        $("#myDiv").slideDown();
+      });
+
+      // Slide Up
+      $("#slideUpBtn").click(function() {
+        $("#myDiv").slideUp();
+      });
+
+      // Toggle
+      $("#toggleBtn").click(function() {
+        $("#myDiv").slideToggle();
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="slideDownBtn">Slide Down</button>
+  <button id="slideUpBtn">Slide Up</button>
+  <button id="toggleBtn">Toggle</button>
+  
+  <div id="myDiv">
+    Content inside the div
+  </div>
+</body>
+</html>
