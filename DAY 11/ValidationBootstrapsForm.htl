@@ -12,7 +12,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-			type="text/javascript"></script>
+			</script>
 
 		<script type="text/javascript">
 		
@@ -207,7 +207,8 @@
 				margin-top:40px;
 				margin-bottom:40px;
 				color:rgb(0, 0, 0);
-				background-color: rgb(200, 214, 150);
+				background-image: linear-gradient(rgb(235, 194, 205), rgb(110, 140, 197),
+				rgb(123, 230, 134))
 			}
 			i.fa,b{color:teal;}
 			
