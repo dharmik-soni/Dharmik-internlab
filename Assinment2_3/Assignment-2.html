@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body{
+        text-align: center;
+    }
+    .rating1 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+
+    }
+    .rating1 input {
+      display: none;
+    }
+    .rating1 label {
+      font-size: 2rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      color: #ddd;
+    }
+    .rating1 label:hover,
+    .rating1 label:hover ~ label,
+    .rating1 input:checked ~ label {
+      color: #ffcc00;
+    }
+    .rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+    .rating input {
+      display: none;
+    }
+    .rating label {
+      color: #ddd;
+      font-size: 2rem;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+      color: #ffcc00;
+    }
+    form{
+      margin-left: 500px;
+      margin-right :500px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: 5px solid ;
+    }
+  </style>
+</head>
+    
+  <h1>Feedback Form</h1>
+  <form action="feedback.php" method="POST" >
+      <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+    
+     <label for="rating">Rating:</label>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5" required>
+      <label for="star5">&#9733;</label>
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">&#9733;</label>
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">&#9733;</label>
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">&#9733;</label>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">&#9733;</label>
+    </div><br><br> 
+    <!-- <div class="rating1">
+        <input type="radio" id="smiley5" name="rating" value="5" required>
+        <label for="smiley5">&#128522;</label>
+        <input type="radio" id="smiley4" name="rating" value="4">
+        <label for="smiley4">&#128578;</label>
+        <input type="radio" id="smiley3" name="rating" value="3">
+        <label for="smiley3">&#128528;</label>
+        <input type="radio" id="smiley2" name="rating" value="2">
+        <label for="smiley2">&#128532;</label>
+        <input type="radio" id="smiley1" name="rating" value="1">
+        <label for="smiley1">&#128542;</label>
+      </div><br><br>-->
+    <input type="submit" value="Submit"> 
+  </form>
+</table>
+</body>
+</html>
